@@ -1,0 +1,17 @@
+tax = int(input("What is your income?"))
+
+if tax <= 10000:
+    multiply = tax * 1
+    print(f"Your final income is {multiply}")
+
+elif tax > 10000 and tax <= 39999:
+    multiply = tax * 0.10
+    print(f"Your final income is {multiply}")
+
+elif tax > 39999 and tax <= 69000:
+    multiply = tax * 0.15
+    print(f"Your final income is {multiply}")
+
+else:
+    multiply = tax * 0.20
+    print(f"Your final income is {multiply}")
