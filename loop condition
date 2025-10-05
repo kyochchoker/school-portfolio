@@ -1,0 +1,84 @@
+LOOP CONDITION
+
+#1 
+for i in range (10):
+    n = int(input("Put 10 Numbers: "))
+    if n % 2 == 0:
+        print(f"Even numbers: {n}")
+
+#2 
+count = 0
+vowels = "aeiouAEIOU"
+
+words = input("Please input a word: ")
+
+for i in words: 
+    if i in vowels:
+        count += 1
+
+print(f"The number of vowels: {count}")
+
+#3 
+count= 0
+for i in range(5):
+    n = int(input("Enter 5 Numbers: "))
+    
+    if n > 100:
+        count += 1
+
+print(count)
+
+#4 
+n = int(input("Enter an upper limit (N): "))
+print(f"Numbers from 1 to {n} divisible by 7:")
+
+for number in range(1, n + 1):
+    if number % 7 == 0:
+        print(number)
+
+#5 
+N = int(input("Enter limit N: "))
+total_sum = 0
+
+for i in range(1, N + 1, 2):
+    total_sum += i
+
+print("Sum of odd numbers:", total_sum)
+
+
+#6 
+numbers = []
+
+for i in range(5):
+    num = int(input("Enter 5 numbers:"))
+    numbers.append(num)
+
+print(f"Largest: {max(numbers)}")
+print(f"Smallest: {min(numbers)}")
+
+#7 
+word = input("Enter a word: ")
+uppercase_letters = ""
+
+for char in word:
+    if char.isupper():
+        uppercase_letters += char
+
+print("Uppercase letters:", uppercase_letters)
+
+#8 
+num = int(input("Put a Number: "))
+is_prime = True
+
+if num <= 1:
+    is_prime = False
+else:
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+    
+if is_prime:
+    print("Prime")
+else:
+    print("Not Prime")
